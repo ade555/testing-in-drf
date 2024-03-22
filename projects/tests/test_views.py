@@ -19,6 +19,7 @@ def test_create_project(api_client, project_payload) -> None:
 
 
 
+
 @pytest.mark.django_db
 def test_update_project(api_client, project_payload) -> None:
     # create a project
