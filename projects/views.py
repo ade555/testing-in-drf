@@ -11,7 +11,7 @@ from .serializers import ProjectSerializer
 
 class ProjectListCreateView(GenericAPIView):
     serializer_class = ProjectSerializer
-    permission_classes = [IsAuthenticatedOrReadOnly]
+    # permission_classes = [IsAuthenticatedOrReadOnly] # uncomment to incluse permission restrictions
 
     def get(self, request:Request):
         projects = Project.objects.all()
